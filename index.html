@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form in HTML CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Registration Form</header>
+      <br><br>
+      <h3>Enter your details here</h3>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="your_email@gmail.com" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="(+91)phone number" required />
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        <hr/>
+        <div class="profession">
+          <h4>Enter your profession</h4>
+          <div class="profession">
+            <div class="profession">
+              <input type="checkbox" id="check-Student" name="profession" checked />
+              <label for="check-student">Student</label>
+            </div>
+            <div class="profession">
+              <input type="checkbox" id="check-teacher" name="profession" />
+              <label for="check-teacher">Teacher</label>
+            </div>
+            <div class="profession">
+              <input type="checkbox" id="check-developer" name="profession" />
+              <label for="check-developer">Developer</label>
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <h4>Choose the stage if you are(student):</h4>
+        <div class="select-box">
+            <select>
+                <option hidden>first primary</option>
+                <option>student</option>
+                <option>teacher</option>
+                <option>developer</option>
+            </select>
+        </div>
+        <hr/>
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" placeholder="Enter street address" required />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>India</option>
+                <option>Nepal</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Enter your city" required />
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Enter your region" required />
+            <input type="number" placeholder="Enter postal code" required />
+          </div>
+        </div>
+        <br><br>
+        <hr/>
+        <br><br>
+        <textarea cols="55" rows="2" placeholder="Any notes"></textarea>
+        <button>Submit</button><button>Reset</button>
+      </form>
+    </section>
+  </body>
+</html>
+
+
+
